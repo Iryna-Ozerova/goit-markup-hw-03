@@ -1,6 +1,7 @@
 :root {
   --primary-background-color: #e5e5e5;
   --secondary-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--hero-text-color);
   color: var(--primary-text-color);
 
   margin: 0;
@@ -69,20 +70,28 @@ p {
   clip: rect(0 0 0 0);
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 /* Шапка сайта */
 
 .page-header {
   background-color: var(--hero-text-color);
 
-  border: 1px solid var(--primary-text-color);
-  padding-bottom: 32px;
-  padding-top: 32px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 24px;
+  padding-top: 25px;
 }
 
 /* Логотип */
 
 .logo {
   color: var(--secondary-text-color);
+
+  display: block;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -168,6 +177,8 @@ p {
 .hero-title {
   color: var(--hero-text-color);
 
+  width: 696px;
+  margin: 0 auto;
   padding-top: 200px;
   margin-bottom: 40px;
 
@@ -175,6 +186,7 @@ p {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
@@ -195,12 +207,23 @@ p {
 }
 
 .button.button.hero {
-  margin-bottom: 210px;
-  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  margin-bottom: 210px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-width: 0px;
 }
 
 /* Наши преимущества */
+section.section.features {
+  padding-bottom: 0;
+}
 .list.features {
   display: flex;
 }
@@ -229,12 +252,13 @@ p {
 .section-title {
   color: var(--secondary-text-color);
 
+  padding-top: 0;
+  text-align: center;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .title-team {
@@ -255,6 +279,10 @@ p {
 
 /* Наша команда */
 
+.section-team {
+  background-color: var(--team-background-color);
+}
+
 .list.profession {
   display: flex;
   text-align: center;
@@ -264,12 +292,28 @@ p {
   margin-left: 30px;
 }
 
+.item-profession {
+  background-color: var(--hero-text-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  border-width: 0px;
+}
+
+.list-group-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .title-team {
   margin-bottom: 10px;
+  text-align: center;
 }
 /* Свойство text применен к страницам Студио и Портфолио */
 .text {
   color: var(--primary-text-color);
+
+  text-decoration: none;
 }
 
 /* Страница Портфолио */
@@ -284,17 +328,29 @@ p {
 }
 
 .filtr .button {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 130px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+
   color: var(--secondary-text-color);
-  background-color: var(--hero-text-color);
+  background-color: var(--team-background-color);
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-
-  display: inline-block;
-  padding: 6px 22px;
 }
 
 .filtr .button:hover,
@@ -309,45 +365,74 @@ p {
 
 /* Наши работы */
 
+.examples-elements {
+  background: #ffffff;
+
+  max-width: 370px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.examples-text {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .list-examples {
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
+.examples-text {
+  background-color: var(--hero-text-color);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
 .examples-elements {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .examples-elements:nth-child(3n) {
   margin-right: 0;
 }
 .title-list {
+  margin-bottom: 10px;
+
   color: var(--secondary-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  text-decoration: none;
 }
 
 /* Футер */
 
-.section.footer {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.section.section.footer {
   background-color: var(--secondary-background-color);
 }
 
 .logo.footer {
-  margin-top: 60px;
-
   color: var(--hero-text-color);
 }
 
+.address.list {
+  margin-top: 20px;
+}
 .address-text,
 .footer-contacts {
   color: var(--hero-text-color);
