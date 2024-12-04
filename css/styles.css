@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+}
+
 ul,
 ol
  {
@@ -29,6 +33,18 @@ ol
 
 button {
     cursor: pointer;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*#region header*/
@@ -142,3 +158,4 @@ footer .logo-studio {
 .text-footer {
     color: #f4f4fd;
 }
+/*#endregion footer*/
