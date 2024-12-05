@@ -1,163 +1,199 @@
-
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
-    color: #434455;
-    background: #fff;
+  color: #434455;
+  background: #fff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
-    display: block;
-    min-width: 100%;
-    height: auto;
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 ul,
-ol
- {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style-type: none;
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*#region header*/
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-.logo-studio {
-   color: #2e2f42;
+.logo-header .logo-part {
+  color: #2e2f42;
 }
 
-.link-nav {
-    font-weight: 500;
-    color: #2e2f42;
-    text-decoration: none;
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
-.link-nav:hover,
-.link-nav:focus {
-    color: #404bbf;
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-.link-contacts {
-    font-style: normal;
-    color: #434455;
-    text-decoration: none;
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  color: #2e2f42;
+  text-decoration: none;
 }
 
-.link-contacts:hover,
-.link-contacts:focus {
-    color: #404bbf;
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-link {
+  padding: 24px 0;
+  font-style: normal;
+  color: #434455;
+  text-decoration: none;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
 }
 
 /*#endregion header*/
 
-
 /*#region hero*/
-.section-hero{ 
-background-color: #2e2f42;
+.section-hero {
+  background-color: #2e2f42;
 }
 
 .title-hero {
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-text-align: center;
-color: #fff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
 }
 
- .button-hero {
-     font-weight: 500;
-     letter-spacing: 0.04em;
-     color: #fff;
-     background: #4d5ae5;
- }
+.button-hero {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4d5ae5;
+}
 
 .button-hero:hover,
-.button-hero:focus{
-    background-color: #404bbf;
+.button-hero:focus {
+  background-color: #404bbf;
 }
 
 /*#endregion hero*/
 
 /*#region our-benefits*/
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    white-space: nowrap;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*#endregion our-benefits*/
 
 /*#region our-team*/
 
 .list-title {
-font-weight: 500;
-font-size: 20px;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
 }
 
 /*#endregion our-team*/
 
-
 /*#region our-portfolio*/
-
 
 /*#endregion our-portfolio*/
 
-
 /*#region footer*/
 .section-footer {
-    background: #2e2f42;
+  background: #2e2f42;
 }
 
-footer .logo-studio {
-    color: #f4f4fd;
+.logo-footer .logo-part {
+  color: #f4f4fd;
 }
 
 .text-footer {
-    color: #f4f4fd;
+  color: #f4f4fd;
 }
 /*#endregion footer*/
